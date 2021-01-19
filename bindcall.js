@@ -15,9 +15,9 @@ const jethroCar = { registrationNumber: "CHJZ782", brand: "Honda" }
 
 const dadCar = { registrationNumber: "AAPF523", brand: "Accord"}
 
-//Bind returns a function
-mycar = car.displayDetails.bind(jethroCar, "Jethro")
-mycar()
+//Bind returns a function, that you can pass argument into
+mycar = car.displayDetails.bind(jethroCar)
+mycar("Jethro")
 
 //Call automatically returns
 car.displayDetails.call(dadCar, "Dad")
